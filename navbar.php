@@ -46,3 +46,38 @@
 	.navbar-nav a:hover::before{
 	transform-origin: 0 50%;
 	}
+	
+	.ortala {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+	}
+
+    .ortala-card {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+	}
+	
+	body {
+  background-image: url("bg.png");
+  background-repeat: repeat-y;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	}
+	
+    .carousel-item {
+      transition: opacity 1s ease-in-out;
+    }
+  
+    .carousel-item.active {
+      opacity: 1;
+    }
+  
+    .carousel-item-next,
+    .carousel-item-prev {
+      opacity: 0.50;
+    }
