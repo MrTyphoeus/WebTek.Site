@@ -55,29 +55,27 @@
 	}
 
     .ortala-card {
-        width: 75%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
 	}
 	
 	body {
-  background-image: url("bg.png");
-  background-repeat: repeat-y;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #808080;
 	}
 	
-    .carousel-item {
-      transition: opacity 1s ease-in-out;
-    }
-  
-    .carousel-item.active {
-      opacity: 1;
-    }
-  
-    .carousel-item-next,
-    .carousel-item-prev {
-      opacity: 0.50;
-    }
+
+	.carousel {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.carousel-inner img {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.carousel-inner {
+  border-bottom: 3px royalblue solid;
+}

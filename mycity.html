@@ -33,33 +33,110 @@
 				</div>
 			</nav>
 		</header>
-	<main> 
-	<div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="merkez1.png" class="d-block w-100" alt="Giresun Merkez">
-      </div>
-      <div class="carousel-item">
-        <img src="kale1.png" class="d-block w-100" alt="Giresun Kalesi">
-      </div>
-      <div class="carousel-item">
-        <img src="image3.jpg" class="d-block w-100" alt="Resim 3">
-      </div>
-      <div class="carousel-item">
-        <img src="image4.jpg" class="d-block w-100" alt="Resim 4">
-      </div>
+
+	
+	<div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="#giris" onclick="change('merkez1.png')" ;><img src="merkez1.png" class="d-block w-100"
+                        alt="giresun"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Giresun Merkez</h1>
+                </div>
+            </div>
+			  <a href="#kale" onclick="change('kale1.png')" ;>
+            <div class="carousel-item">
+                <img src="kale1.png" class="d-block w-100"
+                        alt="giresun kalesi"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Giresun Kalesi</h3>
+                </div>
+            </div>
+			<a href="#ada" onclick="change('giresunada1.png')" ;>
+            <div class="carousel-item">
+                <img src="giresunada1.png" class="d-block w-100" 
+				  alt="giresun adası"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Giresun Adası</h3>
+                </div>
+            </div>
+			<a href="#dag" onclick="change('daglar.png')" ;>
+			<div class="carousel-item">
+                <img src="daglar1.png" class="d-block w-100" 
+				  alt="giresun daglari"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Giresun Dağları</h3>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    </a>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	</main>
+	
+	<div align="center">
+        <div class="container" >
+            <div class="card ortala-card" id="giris">
+                <div class="card-body">
+
+                    <p class="card-text">Giresun, Giresun'un merkez ilçesi olup, batısında Bulancak, güney ve güneydoğusunda Dereli ve doğusunda Keşap ile çevrilidir. Şehrin başlıca gelir kaynağı fındıktır. Nüfusu 2019 yılı itibariyle 448,400 dür.</p>
+
+                </div>
+            </div>
+
+
+            <div class="card ortala-card" id="dag">
+                <img src="daglar1.png" class="card-img-top" alt="giresun daglari" style="height: 400px;">
+                <div class="card-body">
+                    <h5 class="card-title">Giresun Dağları</h5>
+                    <p class="card-text"> Doğu Karadeniz Dağları'nın orta kesimleri il sınırları içerisinde yer almakta olup Giresun Dağları adıyla bilinir ve Zirvesi olan Abdal Musa Tepesi 3.331 m'dir. Denizden itibaren yükseklikler hızla yer yer 2.000 metre yüksekliğe ulaşırlar. Derin vadilerle parçalanmış Giresun Dağları üzerinde eski buzulların açığı topoğrafik formların yanı sıra, buzul göllerine de rastlanmaktadır.</p>
+                </div>
+            </div>
+            <div class="card ortala-card" id="kale">
+                <img src="kale1.png" class="card-img-top" alt="giresun kalesi" style="height: 400px;">
+                <div class="card-body">
+                    <h5 class="card-title">Giresun Kalesi</h5>
+                    <p class="card-text">Giresun Kalesi, Giresun ilinde MÖ 2. yüzyılda inşa edilmiş kaledir. Giresun Kalesi kentin kuzeyindeki yarım adanın kente hakim tepesi üzerinde yer almaktadır. Kalenin günümüze kadar gelebilen kalıntıları merkez kule ve ona bağlı güneydeki sur duvarlarıdır.
+                    </p>
+                </div>
+            </div>
+            <div class="card ortala-card" id="ada">
+                <img src="giresunada1.png" class="card-img-top" alt="ada">
+                <div class="card-body">
+                    <h5 class="card-title">Giresun Adası</h5>
+                    <p class="card-text">Giresun Adası, Kefken Adası ile birlikte Karadeniz'de bulunan Türkiye'ye bağlı iki adadan biridir. Giresun Adası kıyıdan 1.6 km açıkta olup, 40.000 metrekare alana sahiptir. Adada özellikle Akdeniz defnesi ve Yalancı Akasya başta olmak üzere 71 tür doğal otsu ve odunsu bitki türü bulunmaktadır.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	
+	
+	
+	
 	<footer>
 		<div class="container">
 			<div class="row">
