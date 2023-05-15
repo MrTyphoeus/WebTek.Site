@@ -61,7 +61,7 @@
 	}
 	
 	body {
-  background-color: #808080;
+  background-color: #b0c8e1;
 	}
 	
 
