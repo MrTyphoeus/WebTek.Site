@@ -1,5 +1,5 @@
 <?php
-if($_POST["email"]=="b201210025@sakarya.edu.tr" && $_POST["password"]=="b201210025")
+if($_POST["email"]=="g221210047@sakarya.edu.tr" && $_POST["password"]=="g221210047")
 			{
         echo"Merhaba ".$_POST["email"];
         echo"<br>Girişin Onaylandı.";
